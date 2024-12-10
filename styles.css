@@ -1,0 +1,108 @@
+/* Eliminar márgenes y padding del body y html */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.divPrincipal {
+  height: 40vh; /* 40% de la altura de la pantalla */
+  background: url("images/triangular-pattern.jpg") no-repeat center center; /* Ruta a la imagen de fondo con extensión jpg */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  color: #d3d3d3; /* Color del texto gris muy claro */
+  display: flex;
+  flex-direction: column; /* Organizar en columna */
+  justify-content: center; /* Centrar verticalmente el contenido principal */
+  text-align: center; /* Alinear el texto al centro */
+  padding: 20px; /* Espaciado interno */
+  position: relative; /* Para posicionar los elementos absolutos */
+  width: 100vw; /* Asegura que el div cubra todo el ancho de la ventana */
+  box-sizing: border-box; /* Incluye padding en el ancho total del div */
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header-left .logo {
+  margin-right: 10px;
+  height: 40px; /* Ajustar el tamaño del logo según sea necesario */
+}
+
+.header-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.header-right a {
+  color: #d3d3d3; /* Color del texto de los enlaces */
+  text-decoration: none; /* Quitar subrayado */
+  margin: 0 10px; /* Espaciado horizontal entre enlaces */
+}
+
+.header-right a:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
+}
+
+.main-content {
+  margin-top: 60px; /* Espacio para el encabezado */
+}
+
+.main-content h1,
+.main-content h2 {
+  margin: 10px 0; /* Espacio entre títulos */
+}
+
+.divSecundario {
+  height: 20vh; /* 20% de la altura de la pantalla */
+  background-color: #ffffff; /* Fondo blanco */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.logo-centered {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Estilos para el nuevo div de texto informativo */
+.texto-informativo {
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 20px; /* Espaciado interno */
+  color: #000000; /* Color de texto negro */
+  width: 70%; /* Ancho del 70% de la pantalla */
+  margin: 0 auto; /* Margen automático para centrar horizontalmente */
+  text-align: justify; /* Justificación del texto */
+}
+
+.texto-informativo strong {
+  font-weight: bold; /* Estilo negrita para las secciones destacadas */
+}
+
+.texto-informativo ul {
+  list-style-type: disc; /* Puntos para las listas */
+  margin-left: 20px; /* Sangría para las listas */
+}
+
+.texto-informativo ul li {
+  margin-bottom: 10px; /* Espacio entre elementos de la lista */
+}
+
+.texto-informativo a {
+  color: #0000ff; /* Color azul para los enlaces */
+  text-decoration: none; /* Quitar subrayado */
+}
+
+.texto-informativo a:hover {
+  text-decoration: underline; /* Subrayar al pasar el cursor */
+}
